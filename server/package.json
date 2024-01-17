@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "build":"npm i",
+    "build": "npm i",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "PRINCE",
@@ -17,6 +17,8 @@
     "express": "^4.17.2",
     "mongoose": "^6.2.1",
     "nodemon": "^2.0.15",
-    "socket.io": "^4.4.1"
+    "render": "^0.1.4",
+    "socket.io": "^4.4.1",
+    "vercel": "^33.1.0"
   }
 }

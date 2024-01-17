@@ -35,12 +35,15 @@ const server = app.listen(process.env.PORT, () =>
 );
 
 // Set up socket.io
+// Set up socket.io
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: process.env.ORIGIN,
     credentials: true,
   },
 });
+
+
 
 // Maintain a global Map to store online users and their socket IDs
 global.onlineUsers = new Map();
